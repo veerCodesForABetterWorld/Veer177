@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Veer Likes Humans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+
+	</head>
+	<body class="is-preload">
+    <audio id="audio" src="ksi.mp3"></audio>
+		<!-- Header -->
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>The Empathy Project</h2>
+										<p>empathize, proselytize and collectivize</p>
+									</header>
+									<p>Answer the question below, and walk a mile in the shoes of India's top sportsmen</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3 id="prompt">Your name is Veer, and you are the state champion in 100 meters. You are 17 years old and you have been training for the last 10 years. You are balancing going to your school with your athletic career. Money is tight, and you have to choose:  </h3>
+									<p></p>
+
+				<div class="box bg-1">
+					<button id="button1" onclick="userClicked1()" class="button button--aylen button--round-l button--text-thick"><font color="black"> Drop out of school, and use the money to join sports academy </font></button>
+					<button id="button2" onclick="userClicked2()" class="button button--aylen button--round-l button--text-thick"><font color="black"> Stay at school, do your own training but compromise on your athletic career </font></button>
+					<button id="button3" onclick="userClicked3()" class="button button--aylen button--round-l button--text-thick"><font color="black"> Give up </font></button>
+
+				</div>
+
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Designed by Veer Sagar, architect, philanthropist, designer, athlete, entrepreneur, humble </li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+		<script>
+			(function() {
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+				if(isSafari) {
+					document.getElementById('support-note').style.display = 'block';
+				}
+			})();
+		</script>
+
+
+		<script type="text/javascript">
+			
+			function userClicked4(){
+				document.getElementById('prompt').innerHTML = "You work at a restaurant for 21 days, from 8 am - 8 pm. You come home, tired but determined to continue training, and train everyday from 8 pm - 1 am.  You make enough money to fly to Patiala, but due to lack of training, you don't get into the program:";
+
+				document.getElementById('button1').innerHTML = '<font color="black">Find another part time job to survive in Patiala, but focus on training 8 hours a day</font>';
+				document.getElementById('button2').innerHTML = '<font color="black">Go stay in a local gurudwara that provides food and stay for the homeless, and train everyday, till the next entrance exam</font>';
+				document.getElementById('button3').innerHTML = '<font color="black">Give Up</font>';
+
+			}
+
+			function userClicked1(){
+				document.getElementById('prompt').innerHTML = "You drop out of school, and your parents are incredibly worried. Everywhere you go, people remind you that building a career in sports is very hard, and borderline impossible if you are coming from a village. You stay strong and decide to fly to Patiala to join the NIS Patiala Sports Academy. But, you need money for the tickets. You need INR 4,000 to fly to Patiala and the program starts in 21 days. What do you do?";
+
+				document.getElementById('button1').innerHTML = '<font color="black">Work  for 21 days, but risk not getting into the competitive program</font>';
+				document.getElementById('button1').onclick = userClicked4;
+				document.getElementById('button1').on = '<font color="black">Work at a local restaurant for 21 days to make the payment, but risk not finding time to train, and not getting into the competitive NIS Patiala program</font>';
+
+				document.getElementById('button2').innerHTML = '<font color="black">Take a loan of INR 4,000 at 15% interest, and focus on training</font>';
+				document.getElementById('button3').innerHTML = '<font color="black">Give Up</font>';
+
+			}
+
+
+
+		</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
