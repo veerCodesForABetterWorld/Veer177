@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Veer Likes Humans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+
+			button{
+				color: black !important;
+			}
+
+
+			button:hover {
+    			color: #fff !important;
+			}
+
+		</style>
+
+	</head>
+	<body class="is-preload" style="font-family: 'Crimson Pro', serif;">
+    <audio id="audio" src="ksi.mp3"></audio>
+		<!-- Header -->
+
+		<!-- Wrapper -->
+			<div id="wrapper" style="">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2 style="color:black">The Empathy Project</h2>
+										<p>Answer the question below, and walk a mile in the shoes of India's top sports players</p>
+									</header>
+									<h4></i>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3 id="prompt">Your name is Veer, and you are the state champion in 100 meters. You are 17 years old and you have been training for the last 10 years. You are balancing going to your school with your athletic career. Money is tight, and you have to choose:  </h3>
+									<p></p>
+
+									<div style="text-align: center;">
+					<button id="button1" onclick="userClicked1()" class="button button--aylen button--round-l button--text-thick" style="color:black"> Drop out of school, and use the money to join sports academy </button>
+					<button id="button2" onclick="userClicked2()" class="button button--aylen button--round-l button--text-thick">Stay at school, do your own training but compromise on your athletic career </button>
+					<button id="button3" onclick="userClicked3()" class="button button--aylen button--round-l button--text-thick">Give up</button>
+				</div>
+
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Designed by Veer Sagar, architect, philanthropist, designer, athlete, entrepreneur, humble </li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+		<script>
+			(function() {
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+				if(isSafari) {
+					document.getElementById('support-note').style.display = 'block';
+				}
+			})();
+		</script>
+
+
+		<script type="text/javascript">
+
+			function userGetsMoneyFromJindal(){
+
+			}
+
+			function userGoesBackToArmy(){
+
+			}
+
+			function userWorksHard()
+			{
+					document.getElementById('prompt').innerHTML = "You put in the work. You are training harder than every athlete in the camp. Slowly,but surely, you start to see the changes. You want to extend your stay in the US, so you can train even harder. But, the government only covered the first 6 months of the camp. You must now get someone to pay the USD 100K for the next 6 months of the training camp. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'With your coach, you send emails to private sports institutes in India, like the Inspire Institute of Sport, and your state government.';
+				document.getElementById('button1').onclick = userGetsMoneyFromJindal;
+
+				document.getElementById('button2').innerHTML = 'After research, you decide that the USD 100k is simply too steep. You go back to the army to continue your training there';
+				document.getElementById('button1').onclick = userGoesBackToArmy;
+
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+}
+			function userGoesAbroad(){
+				document.getElementById('prompt').innerHTML = "The training camp in the US is eye-opening. You have been in the top 10% of all athletes in Patiala, but here, everyone seems to be better, richer, smarter than you. Your mental confidence takes a hit. Your family has very high expectations from you. You are the first person in your family to leave your village, your state and your country. You cannot let them down, but the gap between you and the American athletes is way too high. You decide to speak to the coach. What do you say?";
+
+				document.getElementById('button1').innerHTML = 'I want to practice 18 hours a day, and you ask for extra training hours. You put in more work than any athlete in the group.';
+				document.getElementById('button1').onclick = userWorksHard;
+
+				document.getElementById('button2').innerHTML = 'You tell the coach that you dont think you are ready for the Olympics yet. You silently decide to go back to India as soon as the camp ends';
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+			
+			function userJoinsArmy(){
+				document.getElementById('prompt').innerHTML = "After joining the army, you are given the opportunity to travel abroad and have access to better training facilities but you do not wish to leave your family behind and so you are stuck. Your family has been very supportive, but the last 6 months have been incredibly difficult. They don't want you to leave the country, and are afraid for your safety. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Take the plunge and travel abroad to the US for a 6 month training camp';
+				document.getElementById('button1').onclick = userGoesAbroad;
+
+				document.getElementById('button2').innerHTML = 'Stay back in Patiala. Try to convince them for the next years camp';
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+
+			function userClickedCuttingDownOnDiet(){
+				document.getElementById('prompt').innerHTML = "Your body can’t perform  that well, and your training is suffering. You decide to start eating at the local gurudwara, but keep going. Within 3 months, you have made the INR 4,000 you need to fly to Patiala, but you have missed the first round. You must now apply to the second round of training. At Patiala, the sports center doesn't pay for your living expenses, and instead charges INR 2.5L a year for your program. How do you cover these costs?";
+
+				document.getElementById('button1').innerHTML = 'Do a part time job, and risk having less time for training';
+
+				document.getElementById('button2').innerHTML = 'Join the army and train at their academy while still serving for the country';
+				document.getElementById('button2').onclick = userJoinsArmy;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedSellingProduce(){
+				document.getElementById('prompt').innerHTML = "If you help out at your parents' farm. It takes 2 months of back-breaking work, but within 2 months, you have made the INR 4,000 you need to fly to Patiala, but you have missed the first round. You must now apply to the second round. At Patiala, the sports center doesn't pay for your living expenses, and instead charges INR 2.5L a year for your program. How do you cover these costs?";
+
+				document.getElementById('button1').innerHTML = 'Do a part time job, and risk having less time for training';
+
+				document.getElementById('button2').innerHTML = 'Join the army and train at their academy while still serving for the country';
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+
+
+			function userClickedLoanButton(){
+				document.getElementById('prompt').innerHTML = "You can't afford to pay back the loan as you have failed to acquire a steady source of income so you decide to either:";
+
+				document.getElementById('button1').innerHTML = 'Cut down on your diet so you can save up for the INR 4,000 ticket to Patiala';
+				document.getElementById('button1').onclick = userClickedCuttingDownOnDiet;
+
+				document.getElementById('button2').innerHTML = 'Help out at your parents’ farm so you can sell more produce and pay the INR 4,000 ticket';
+				document.getElementById('button2').onclick = userClickedSellingProduce;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClicked4(){
+				document.getElementById('prompt').innerHTML = "You work at a restaurant for 21 days, from 8 am - 8 pm. You come home, tired but determined to continue training, and train everyday from 8 pm - 1 am.  You make enough money to fly to Patiala, but due to lack of training, you don't get into the program:";
+
+				document.getElementById('button1').innerHTML = 'Find another part time job to survive in Patiala, but focus on training 8 hours a day';
+				document.getElementById('button2').innerHTML = 'Go stay in a local gurudwara that provides food and stay for the homeless, and train everyday, till the next entrance exam';
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClicked1(){
+				document.getElementById('prompt').innerHTML = "You drop out of school, and your parents are incredibly worried. Everywhere you go, people remind you that building a career in sports is very hard, and borderline impossible if you are coming from a village. You stay strong and decide to fly to Patiala to join the NIS Patiala Sports Academy. But, you need money for the tickets. You need INR 4,000 to fly to Patiala and the program starts in 21 days. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Work  for 21 days, but risk not getting into the competitive program';
+				document.getElementById('button1').onclick = userClicked4;
+				document.getElementById('button1').on = 'Work at a local restaurant for 21 days to make the payment, but risk not finding time to train, and not getting into the competitive NIS Patiala program';
+
+				document.getElementById('button2').innerHTML = 'Take a loan of INR 4,000 at 15% interest, and focus on training';
+				document.getElementById('button2').onclick = userClickedLoanButton;
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+
+
+		</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -2521,8 +2521,8 @@ input, select, textarea {
 		background-color: #989898;
 		border-radius: 5px;
 		border: 0;
-		color: #ffffff !important;
-		cursor: pointer;
+/*		color: #ffffff !important;
+*/		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
 		height: 2.75em;
@@ -2902,7 +2902,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section > .container {
-				padding: 4em 0 2em 0;
+				padding: 2em 0 2em 0;
 			}
 
 	}
@@ -3013,6 +3013,7 @@ input, select, textarea {
 		/* Header Panel */
 
 			#titleBar {
+				display: none !important;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;

@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Veer Likes Humans</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+
+			button{
+				color: black !important;
+			}
+
+
+			button:hover {
+    			color: #fff !important;
+			}
+
+		</style>
+
+	</head>
+	<body class="is-preload" style="font-family: 'Crimson Pro', serif;" onload="playGame()">
+    <audio id="audio" src="ksi.mp3"></audio>
+		<!-- Header -->
+
+		<!-- Wrapper -->
+			<div id="wrapper" style="background-color: #16f716;
+background-image: linear-gradient(0deg, #16f716 0%, #ffffff 50%, #f09a05 100%);">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2 style="color:black">The Empathy Project</h2>
+										<p>empathize, proselytize and collectivize</p>
+									</header>
+									<h4><i>Answer the question below, and walk a mile in the shoes of India's top sports players</i></h4>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3 id="prompt">Your name is Veer, and you are the state champion in 100 meters. You are 17 years old and you have been training for the last 10 years. You are balancing going to your school with your athletic career. Money is tight, and you have to choose:  </h3>
+									<p></p>
+
+									<div style="text-align: center;">
+					<button id="button1" onclick="userClicked1()" class="button button--aylen button--round-l button--text-thick" style="color:black"> Drop out of school, and use the money to join sports academy </button>
+					<button id="button2" onclick="userClicked2()" class="button button--aylen button--round-l button--text-thick">Stay at school, do your own training but compromise on your athletic career </button>
+					<button id="button3" onclick="userClicked3()" class="button button--aylen button--round-l button--text-thick">Give up</button>
+				</div>
+
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Designed by Veer Sagar, architect, philanthropist, designer, athlete, entrepreneur, humble </li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+		<script>
+			(function() {
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+				if(isSafari) {
+					// document.getElementById('support-note').style.display = 'block';
+				}
+			})();
+		</script>
+
+
+		<script type="text/javascript">
+
+		    function userClickedQuitJob(){
+				document.getElementById('prompt').innerHTML = "You choose to leave your current job and focus on training. You form a small business with the measly stash of vegetables that your parents had given you before leaving for Patiala. Unfortunately, After a few weeks, you run out of food leaving you with only two options to survive:  ";
+
+				document.getElementById('button1').innerHTML = 'Feast on the small stash of vegetables that you had planned to sell';
+				// document.getElementById('button1').onclick = ;
+				
+				document.getElementById('button2').innerHTML = 'Suffer a week without sufficent food, eating only small meals as to save some for later .';
+				// document.getElementById('button2').onclick = ;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+			
+			function userTrainsMore(){
+				document.getElementById('prompt').innerHTML = "	You challenge yourself to train as often as possible with the little income that you have, training for as much as 8 hours per day. Nevertheless, you feel that you are yet to display your true potential on a larger scale to possibly appeal to scouts and other coaches. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Walk 15km to the nearest sports federation and ask them for an opprtunity to compete in a major tournament.';
+				// document.getElementById('button1').onclick = ;
+
+				document.getElementById('button2').innerHTML = 'Participate in small athletic meets in your village and hope you get spotted.';
+				// document.getElementById('button2').onclick = ;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}			
+
+			function userGetsExposure(){
+				document.getElementById('prompt').innerHTML = "	After particpating in various tournaments, an odd man spots your talent and asks you if you're interested in being a part of his academy. He gives you a set of shoes and assures you that all expenses will be taken care of. You find it extremeley hard to believe but you agree immediately. However, you soon become hestitant to join his academy as he mentions that you will need to spend a year away from your family in the united states for the first term of the training program :";
+
+				document.getElementById('button1').innerHTML = 'Accept the offer and suffer the consequences of not being able to meet your family for a year.';
+				// document.getElementById('button1').onclick = ;
+
+				document.getElementById('button2').innerHTML = 'Accept the offer and miss crucial components of the training program in order to stay close to your family ';
+				// document.getElementById('button2').onclick = ;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+		    function userGoesBackToArmy(){ 
+
+				document.getElementById('prompt').innerHTML = "After travelling back to Patiala you tell your coaches about that large expense required to succeed as a professional and how you have lost almost all of your motiavtion. Nonetheless, you are put under a rigorous training program as the army officials are more than determined to help you succeed. Your body cannot handle the state of turmoil that the program has put you in and you are failing to produce substatial results. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Continue training, with hopes of obtaining a better outcome and eventually reaching a standard high enough to take part in the asian athletics championship, while enduring the pain that the program has to offer.';
+
+				// document.getElementById('button1').onclick = ;
+
+				document.getElementById('button2').innerHTML = 'Take time off to rest and recuperate so that your body is in a suitable condition to continue training, but compromise on time.';
+			
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+            }
+
+			function userMoneyFromJindal(){
+
+				document.getElementById('prompt').innerHTML = "Unfortunately, you have failed to reach out to a reliable sports institue in india and the government officals are refusing to lend you such a large sum of money. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Respond to the state government asking for USD 10,000 in order to afford a place to stay and train individually for an extra year in the United States.';
+				
+				document.getElementById('button2').innerHTML = 'Go back to Patiala and continue searching for an accepting sports institue to pursue your wish to train at an established academey.';
+			
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+				
+			}
+		
+			function userWorksHard()
+			{
+					document.getElementById('prompt').innerHTML = "You put in the work. You are training harder than every athlete in the camp. Slowly,but surely, you start to see the changes. You want to extend your stay in the US, so you can train even harder. But, the government only covered the first 6 months of the camp. You must now get someone to pay the USD 100K for the next 6 months of the training camp. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'With your coach, you send emails to private sports institutes in India, like the Inspire Institute of Sport, and your state government.';
+				document.getElementById('button1').onclick = userGetsMoneyFromJindal;
+
+				document.getElementById('button2').innerHTML = 'After research, you decide that the USD 100k is simply too steep. You go back to the army to continue your training there';
+				document.getElementById('button2').onclick = userGoesBackToArmy;
+
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+            }
+
+            function userGoesToIndia(){
+				document.getElementById('prompt').innerHTML = "You choose to head back home and continue training in the army. Your coaches push you consistently, giving you almost no time to relax. After a few weeks it becomes fairly obvious that your body is struggling to handle such a drastic change in daily routine but you feel that you have no option but to participate in the upcoming nationals meet since you have been placed in the most ideal age group with yiu being one of the oldest of the lot. As a result, it would be a lot harder for you to suceed in later years with more experinced athletes. What do you do? ?";
+
+				document.getElementById('button1').innerHTML = 'Participate in the nationals and risk not performing up to your highest potential due to several injuries.';
+				document.getElementById('button1').onclick = userWorksHard;
+
+				document.getElementById('button2').innerHTML = 'Take time off to rest and particpate in next years tournament, making it alot harder for you to succeed, considering the new age group that you will be placed in.';
+				document.getElementById('button2').onclick = userGoesToIndia;
+
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userStaysInPatiala(){
+				document.getElementById('prompt').innerHTML = "You choose to stay back in Patiala and continue training in the army. Your coaches push you consistently, giving you almost no time to relax. After a few weeks it becomes fairly obvious that your body is struggling to handle such a drastic change in daily routine but you feel that you have no other option but to participate in the upcoming nationals meet since you have been placed in the most ideal age group with you being one of the oldest of the lot. As a result, it would be a lot harder for you to suceed in later years with more experinced athletes.What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Participate in the nationals and risk not performing up <br> to your highest potential due to several injuries.';
+				// document.getElementById('button1').onclick = ;
+
+				document.getElementById('button2').innerHTML = 'Take time off to rest and particpate in next years tournament, making it alot harder for you to succeed, considering the age group.';
+				// document.getElementById('button2').onclick = ;
+
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userGoesAbroad(){
+				document.getElementById('prompt').innerHTML = "The training camp in the US is eye-opening. You have been in the top 10% of all athletes in Patiala, but here, everyone seems to be better, richer and smarter than you. Your mental confidence takes a hit. Your family has very high expectations from you. You are the first person in your family to leave your village, your state and your country. You cannot let them down, but the gap between you and the American athletes is way too high. You decide to speak to the coach. What do you say?";
+
+				document.getElementById('button1').innerHTML = 'I want to practice 18 hours a day, and you ask for extra training hours. You put in more work than any athlete in the group.';
+				document.getElementById('button1').onclick = userWorksHard;
+
+				document.getElementById('button2').innerHTML = 'You tell the coach that you dont think you are ready for the Olympics yet. You silently decide to go back to India as soon as the camp ends';
+				document.getElementById('button2').onclick = userGoesToIndia;
+
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+			
+			function userJoinsArmy(){
+				document.getElementById('prompt').innerHTML = "After joining the army, you are given the opportunity to travel abroad and have access to better training facilities but you do not wish to leave your family behind and so you are stuck. Your family has been very supportive, but the last 6 months have been incredibly difficult. They don't want you to leave the country, and are afraid for your safety. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Take the plunge and travel abroad to the US for a 6 month training camp';
+				document.getElementById('button1').onclick = userGoesAbroad;
+
+				document.getElementById('button2').innerHTML = 'Stay back in Patiala. Try to convince them for the next years camp';
+				document.getElementById('button2').onclick = userStaysInPatiala;
+
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+            function userAppliesForJob(){
+	            document.getElementById('prompt').innerHTML = "After coming across an opportunity for a part time job as a delivery worker, you notice that your level of english does not reach the required standard on your appliaction form. Your devotion to athletics has led you to assign less time to academics, making it harder for you to find a suitable job. What do you do?";
+
+				document.getElementById('button1').innerHTML = 'Take part in the local tournament with prize money worh up to INR 1L and simultaneously work as a herder in native farms to earn the rest of the money  ';
+			
+				document.getElementById('button2').innerHTML = 'Contact various fundraisers and ask for help in obtaining the INR 2.5L';
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+
+            }
+
+			function userClickedCuttingDownOnDiet(){
+				document.getElementById('prompt').innerHTML = "Your body can’t perform  that well, and your training is suffering. You decide to start eating at the local gurudwara, but keep going. Within 3 months, you have made the INR 4,000 you need to fly to Patiala, but you have missed the first round. You must now apply to the second round of training. At Patiala, the sports center doesn't pay for your living expenses, and instead charges INR 2.5L a year for your program. How do you cover these costs?";
+
+				document.getElementById('button1').innerHTML = 'Apply for a part time job, and risk having less time for training';
+				document.getElementById('button1').onclick = userAppliesForJob;
+
+				document.getElementById('button2').innerHTML = 'Join the army and train at their academy while still serving for the country';
+				document.getElementById('button2').onclick = userJoinsArmy;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedSellingProduce(){
+				document.getElementById('prompt').innerHTML = "If you help out at your parents' farm. It takes 2 months of back-breaking work, but within 2 months, you have made the INR 4,000 you need to fly to Patiala, but you have missed the first round. You must now apply to the second round. At Patiala, the sports center doesn't pay for your living expenses, and instead charges INR 2.5L a year for your program. How do you cover these costs?";
+
+				document.getElementById('button1').innerHTML = 'Apply for a part time job, and risk having less time for training';
+				document.getElementById('button1').onclick = userAppliesForJob;
+
+				document.getElementById('button2').innerHTML = 'Join the army and train at their academy while still serving for the country';
+				document.getElementById('button2').onclick = userJoinsArmy;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedStayCloseToHome(){
+				document.getElementById('prompt').innerHTML = "After thorough exploration you come across a small,modest facility. They are open to all athletes at a relatively cheap price and they give you the opportunity to either:";
+
+				document.getElementById('button1').innerHTML = 'Use their facilities to train independantly each day and solely focus on improving without any distractions.';
+				document.getElementById('button1').onclick = userTrainsMore;
+
+				document.getElementById('button2').innerHTML = 'Get more exposure to the sport through different tournaments and events.';
+				document.getElementById('button2').onclick = userGetsExposure;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+			function userClickedGoAllOut(){
+				document.getElementById('prompt').innerHTML = "	After ignoring your parents' requets you go back to Patiala and take part in the trials once again. Unfortunately, you fail to attract the eyes of recruiters for the second time due to the lack of training while caring for your parents. You are forced to continue living in the gurudwara but you must improve drastically in order to reach a higher level:";
+
+				document.getElementById('button1').innerHTML = 'Find more time to train independantly each day and solely focus on improving without any distractions.';
+				document.getElementById('button1').onclick = userTrainsMore;
+
+				document.getElementById('button2').innerHTML = 'Get more exposure to the sport through different tournaments and events.';
+				document.getElementById('button2').onclick = userGetsExposure;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedCashierJob(){
+				document.getElementById('prompt').innerHTML = "You gather enough money to attend to your parents, but after preparing to head back home they become reluctant to let you go. They fear the risk involved with becoming a professional athlete and are afraid that you won't make it.";
+
+				document.getElementById('button1').innerHTML = 'Go all out and use the rest of your income to travel to patiala and pursue your dream to become a professional athlete.';
+				document.getElementById('button1').onclick = userClickedGoAllOut;
+
+				document.getElementById('button2').innerHTML = 'Continue devloping your athletic career by searching for an adequate academy, not too far away from home.';
+				document.getElementById('button2').onclick = userClickedStayCloseToHome;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedSellingEquipment(){
+				document.getElementById('prompt').innerHTML = "You sell your equipment and spend that money on caring for your family. Unfortunately, your training is becoming a lot harder and you are struggling to particpate in tournaments without the necessary requirements:";
+
+				document.getElementById('button1').innerHTML = 'Reach out to different athletics institutes and trainers with hopes of gathering some form of financial support and advice.';
+				document.getElementById('button1').onclick = userClickedInstitutes;
+
+				document.getElementById('button2').innerHTML = 'Sneak into the local training facility and make use of their amenities.';
+				document.getElementById('button2').onclick = userClickedSneakIn;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedFactory(){
+				document.getElementById('prompt').innerHTML = "You become a part of the workforce at the factory but you do not seem to be welcome due to differences in religous beliefs. Nonetheless, you have been training consistently at a desirable level and you do not wish to change your schedule:";
+
+				document.getElementById('button1').innerHTML = 'Work for a few more days and then quit to spend more time on training without a steady source of income until the time of trials.';
+				document.getElementById('button1').onclick = userClickedQuitJob;
+
+				document.getElementById('button2').innerHTML = 'Endure a pay cut to take up another job in the factory that requires fewer qualifications, far from any interaction with your co-workers. .';
+				document.getElementById('button2').onclick = userClickedPayCut;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedFarmer(){
+				document.getElementById('prompt').innerHTML = "You have been travelling to work regularly, maintaing a steady schedule, spending a sufficent amount of time on training and development. However, you haven't been performing well at work due to extreme fatigue and your boss is threatening to fire you:";
+
+				document.getElementById('button1').innerHTML = 'Quit and spend more time training without a steady source of income until the time of trials';
+				document.getElementById('button1').onclick = userClickedQuitJob;
+				
+				document.getElementById('button2').innerHTML = 'Tell your boss about the situation that you are in with non-stop training and practise and hope he understands.';
+				document.getElementById('button2').onclick = userClickedTellBoss;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedGurudwara(){
+				document.getElementById('prompt').innerHTML = "After staying at the local gurudwara for a few weeks you learn that your parents have fallen sick and that you have to get back home immediately. Unfortunately,You cannot afford the expenses to travel back and forth and so you are forced to either: :";
+
+				document.getElementById('button1').innerHTML = 'Sell your shoes and other sports equipment to quickly obtain the funds for your parents treatment and travel expenses.';
+				document.getElementById('button1').onclick = userClickedSellingEquipment;
+
+				document.getElementById('button2').innerHTML = 'Go back home and take up a job as cashier to accquire the required sum of money, thereby extending your stay and decreasing the amount of time you have to train.';
+				document.getElementById('button2').onclick = userClickedCashierJob;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedFindNewJob(){
+				document.getElementById('prompt').innerHTML = "After searching for a suitable opening you weigh out your options and eventually stumble across a dilemma. An easily attainable position at a farm seems to be the best option but the farm is considerably far from affordable lodging and the only other viable option as a factory worker seems to hold a hostile work environment. what do you do?";
+
+				document.getElementById('button1').innerHTML = 'Take up the job as a worker in the farm and wake up reasonably early to walk 10km to work everyday, compromising on sleep.';
+				document.getElementById('button1').onclick = userClickedFarmer;
+				
+				document.getElementById('button2').innerHTML = 'Take up the job as a factory worker and bear the hostility from your co-workers';
+				document.getElementById('button2').onclick = userClickedFactory;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClickedLoanButton(){
+				document.getElementById('prompt').innerHTML = "You can't afford to pay back the loan as you have failed to acquire a steady source of income. You decide to either:";
+
+				document.getElementById('button1').innerHTML = 'Cut down on your diet so you can save up for the INR 4,000 ticket to Patiala';
+				document.getElementById('button1').onclick = userClickedCuttingDownOnDiet;
+
+				document.getElementById('button2').innerHTML = 'Help out at your parents’ farm so you can sell more produce and pay the INR 4,000 ticket';
+				document.getElementById('button2').onclick = userClickedSellingProduce;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClicked4(){
+
+				var currentWill = parseInt(localStorage.getItem('willToSucceed'));
+				currentWill = currentWill - 10; 
+				localStorage.setItem('willToSucceed',currentWill);
+				var currentMoney = parseInt(localStorage.getItem('moneyInBank'));
+				currentMoney = currentMoney + 4000;
+				localStorage.setItem('moneyInBank',currentMoney);
+
+
+				document.getElementById('prompt').innerHTML = "You work at a restaurant for 21 days, from 8 am - 8 pm. You come home, tired but determined to continue training, and train everyday from 8 pm - 1 am.  You make enough money to fly to Patiala, but due to lack of training, you don't get into the program:";
+
+				document.getElementById('button1').innerHTML = 'Find another part time job to survive in Patiala, but focus on training 8 hours a day';
+				document.getElementById('button1').onclick = userClickedFindNewJob;
+
+				document.getElementById('button2').innerHTML = 'Stay in a local gurudwara that provides food and stay for the homeless, and train everyday, till the next trial session';
+				document.getElementById('button2').onclick = userClickedGurudwara;
+
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+			function userClicked1(){
+
+
+				document.getElementById('prompt').innerHTML = "You drop out of school, and your parents are incredibly worried. Everywhere you go, people remind you that building a career in sports is very hard, and borderline impossible if you are coming from a village. You stay strong and decide to fly to Patiala to join the NIS Patiala Sports Academy. But, you need money for the tickets. You need INR 4,000 to fly to Patiala and the program starts in 21 days. What do you do?";
+
+			
+				document.getElementById('button1').innerHTML = 'Work at a local restaurant for 21 days to make the payment, but risk not finding time to train, and not getting into the competitive NIS Patiala program';
+				document.getElementById('button1').onclick = userClicked4;
+
+				document.getElementById('button2').innerHTML = 'Take a loan of INR 4,000 at 15% interest, and focus on training';
+				document.getElementById('button2').onclick = userClickedLoanButton;
+				
+				document.getElementById('button3').innerHTML = 'Give Up';
+
+			}
+
+
+
+		</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				
+				function playGame(){
+					localStorage.setItem('willToSucceed','100');
+					localStorage.setItem('moneyInBank','1000');
+				}
+
+			</script>
+
+	</body>
+</html>
